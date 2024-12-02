@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="./styles/animations.css" />
     <link rel="stylesheet" href="./styles/themes.css" />
     <script src="./scripts/set-theme.js"></script>
-    <link rel="icon" href="./svg/favicon.ico" sizes="any">
     <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="./svg/favicon.png">
   </head>
@@ -48,14 +47,40 @@
     </header>
 
 
-    <main>
+    <main class="main">
+<ul class="cards-list">
 
-    </main>
+  <li class="card-item">
+    <h2 class="title-card">Фритрек и нулевой спринт: Подготовка к работе</h2>
+<div class="image-container">
+    <span class="card-label">&lt;/HTML&gt;</span>
+    <img class="image" src="./images/image.png" alt="белый грузовичок на поляне в лесу">
+  </div>
+    <div class="text-card">
+    <p class="text-description">Это было самое начало пути. На этом этапе важно было проникнуться 
+      основами и настроиться на учёбу. И, возможно, подумать, как новые знания могут повлиять 
+      на ваше будущее.</p>
+    <p class="text-reflections">Место для ваших воспоминаний о начале обучения.</p>
+    </div>
 
-
-    <footer>
-
-    </footer>
+    <div class="like-buttons">
+      <button class="button card__icon-button">
+        <img class="like-icon" src="./svg/heart-in-paths.svg"></img>
+      </button>
+      <button class="button card__like-button">
+        <span class="button__text">Like</span>
+      </button>
+    </div>
+  </li>
+</ul>
+<button class="button save-button">
+  <svg class="diskette" viewBox="0 0 21 21" width="21" 
+  height="21" fill="currentCOlor" xmlns="http://www.w3.org/2000/svg">
+<use href="./svg/floppy.svg" class="floppy"></use>
+  </svg>
+  <span class="button__text">Сохранить на память</span>
+</button>
+</main>
 
 
     <script src="./scripts/like.js"></script>
