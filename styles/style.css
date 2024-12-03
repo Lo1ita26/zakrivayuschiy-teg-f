@@ -102,6 +102,7 @@
   margin-top: 1px;
   background-color: var(--accent-color);
   transition: width 0.5s;
+  position: absolute;
 }
 
 .theme-menu__button:focus-visible::after {
@@ -142,7 +143,6 @@
   font-size: 14px;
   line-height: 14px;
   font-weight: var(--weight-regular);
-  text-transform: uppercase;
   text-shadow: 1px var(--stroke-label);
   right: 0;
   top: 25px;
@@ -196,6 +196,35 @@
   border: none;
 }
 
+.card__icon-button:focus {
+  outline: none;
+}
+
+.card__icon-button:focus-visible {
+  border: 2px solid var(--accent-color);
+  transition: 0.3s linear;
+}
+
+.main-body {
+  transition: fill 0.3s 0.05s linear;
+}
+
+.core {
+  transition: fill 0.3s linear;
+}
+
+.like-icon:hover .core, .like-icon:hover .main-body {
+  fill: var(--accent-color);
+}
+
+.like-icon:active .core, .like-icon:active .main-body {
+  fill: var(--filling);
+}
+
+.sparks {
+  opacity: 0;
+}
+
 .card__like-button {
   inline-size: 130px;
   block-size: 38px;
@@ -203,10 +232,10 @@
   position: relative;
 }
 
-.button-text {
-  z-index: 99;
+.button__text {
+  z-index: 1;
   position: relative;
-  color: var(--background-color);
+  color: var(--button-text);
   mix-blend-mode: difference; 
 }
 
@@ -214,7 +243,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-color: pink;
+  background-color: var(--accent-color);
   transition: 0.5s ease-in-out;
   translate: -100%;
 }
@@ -234,11 +263,49 @@
 .save-button {
   inline-size: 335px;
   block-size: 55px;
-  padding-block-end: 55px;
+  margin-block-start: 50px;
   overflow: hidden;
   position: relative;
 }
 
+.popup {
+  color: var(--button-text);
+  max-width: 39px;
+  z-index: 1;
+  mix-blend-mode: difference;
+  
+}
+
 @media (width <= 375px) {
 
+}
+
+/* стили изображений */
+
+.image-sepia {
+  filter: sepia(3);
+}
+
+.image-brightness {
+  filter: brightness(300%);
+}
+
+.image-blur {
+  filter: blur(6px);
+}
+
+.image-grayscale {
+  filter: grayscale(60%);
+}
+
+.image-hue-rotate {
+  filter: hue-rotate(-90deg);
+}
+
+.image-opacity {
+  filter: opacity(50%);
+}
+
+.image-saturate {
+  filter: saturate(300%);
 }
