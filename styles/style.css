@@ -74,7 +74,8 @@
   cursor: pointer;
 }
 
-.theme-menu__button:disabled, .theme-menu__button:hover {
+.theme-menu__button:disabled,
+.theme-menu__button:hover {
   opacity: 0.6;
 }
 
@@ -95,7 +96,7 @@
 }
 
 .theme-menu__button::after {
-  content: '';
+  content: "";
   display: block;
   width: 0%;
   height: 2px;
@@ -136,7 +137,7 @@
   position: relative;
 }
 
-.card-label  {
+.card-label {
   position: absolute;
   color: var(--accent-color);
   font-family: var(--accent-font-family);
@@ -151,13 +152,16 @@
   z-index: 1;
 }
 
-@supports((text-stroke: 1px var(--stroke-label)) or (-webkit-text-stroke:1px var(--stroke-label))) {
+@supports (
+  (text-stroke: 1px var(--stroke-label)) or
+    (-webkit-text-stroke: 1px var(--stroke-label))
+) {
   .card-label {
-      -webkit-text-stroke: 1px var(--stroke-label);
-      text-stroke: 1px var(--stroke-label);
-      text-shadow: none;
+    -webkit-text-stroke: 1px var(--stroke-label);
+    text-stroke: 1px var(--stroke-label);
+    text-shadow: none;
   }
-} 
+}
 
 .image {
   inline-size: 100%;
@@ -216,10 +220,11 @@
   z-index: 1;
   position: relative;
   color: var(--button-text);
-  mix-blend-mode: difference; 
+  mix-blend-mode: difference;
 }
 
-.card__like-button::after, .save-button::before{
+.card__like-button::after,
+.save-button::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -228,7 +233,8 @@
   translate: -100%;
 }
 
-.card__like-button:hover::after, .save-button:hover::before{
+.card__like-button:hover::after,
+.save-button:hover::before {
   translate: 0%;
 }
 
@@ -333,4 +339,3 @@ dialog::backdrop {
     block-size: 28px;
   }
 }
-
