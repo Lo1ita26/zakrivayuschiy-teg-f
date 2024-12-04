@@ -69,7 +69,7 @@
       <button class="button card__icon-button">
         <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none" 
         xmlns="http://www.w3.org/2000/svg">
-        <g class="heart is-liked">
+        <g class="heart">
           <path class="contour" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9
            12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15
            21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24
@@ -426,7 +426,7 @@
       материала про «красотищу». Во-вторых, с окончанием курса учёба не заканчивается. Вёрстка — это целый мир. И этот мир 
       постоянно меняется. Познать его полностью не получится, но это тот 
       случай, когда важен сам процесс познания. Ведь часто путь — и есть результат.</p>
-    <p class="text-reflections">Место для ваших воспоминаний о начале обучения.</p>
+    <p class="text-reflections">Место, чтобы остановиться, подумать и написать, что вы чувствуете в этой точке пути.</p>
     </div>
 
     <div class="like-buttons">
@@ -466,7 +466,10 @@
 
 
 
-<button class="button save-button">
+<button class="button save-button"
+type="button" 
+onclick="window['dialog-id'].showModal()" 
+aria-controls="dialog-id">
   <svg class="popup" 
   viewBox="0 0 39 39" 
   width="21" height="21" 
@@ -475,6 +478,29 @@
   </svg>
   <span class="button__text">Сохранить на память</span>
 </button>
+
+
+
+
+<dialog id="dialog-id">
+
+  <svg class="popup dialog-popup" 
+  viewBox="0 0 39 39" 
+  width="39" height="39" 
+  xmlns="http://www.w3.org/2000/svg">
+<use href="./svg/floppy.svg#floppy"></use>
+  </svg>
+
+  <h2 class="dialog-text">Вставьте <br> дискету, чтобы <br> продолжить</h2>
+  
+  <button class="button dialog-button"
+  type="button" 
+  onclick="window['dialog-id'].close()">
+    <span class="button__text">OK</span>
+  </button>
+
+
+</dialog>
 </main>
 
 
