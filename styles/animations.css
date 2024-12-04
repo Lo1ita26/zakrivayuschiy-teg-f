@@ -61,14 +61,17 @@
 }
 /* клик по сердцу */
 .like-icon.is-liked .core {
+  fill: #FF0000;
   transition: var(--filling) 0.3s linear;
 }
 
 .like-icon.is-liked .main-body  {
+  fill: #FF0000;
   transition: var(--filling) 0.3s linear;
 }
 
 .like-icon.is-liked .contour {
+  fill: #FF0000;
   transition: var(--filling) 0.3s 0.06s;
 }
 
