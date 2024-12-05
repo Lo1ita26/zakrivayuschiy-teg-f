@@ -144,7 +144,7 @@
   font-family: var(--accent-font-family, fantasy);
   font-size: 14px;
   line-height: 14px;
-  font-weight: var(--weight-regular);
+  font-weight: var(--weight-bold);
   text-shadow: 1px var(--stroke-label);
   right: 0;
   top: 25px;
